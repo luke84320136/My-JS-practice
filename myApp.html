@@ -1,0 +1,25 @@
+<script>
+let car = {
+    maker: "Toyota",
+    speed: 200,
+    engine: {
+        size: 2.0,
+        make: "BMW",
+        fuel: "petrol",
+        pistons: [
+            {maker: "BMW"}, 
+            {maker: "BMW2"}
+        ]
+    },
+    drive: function() {return "maker"+"&speed";}
+}
+console.log(car.maker)
+let array = [
+    "string",
+    100,
+    [ "FuckYOu", 9487 ],
+    { car: "Ford" },
+    function() {return "maker"+"&speed";}
+]
+
+</script>
