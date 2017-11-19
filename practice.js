@@ -307,6 +307,18 @@ let greetMe = () => {
 }
 greetMe()
 
+// currying
+let aPersonName = 
+name => 
+  gender => 
+    nickname =>
+      name + ', 你好\n' + 
+      '您的性別是：' + gender + '\n' +
+      '嗨，' + nickname + '!' 
+
+let output = aPersonName('藍藍路')('男')('小藍')
+console.log(output)
+
 // Fizz Buzz
 let fizzBuzz = (num) => {
   for(let i = 1; i<num ;i++ ) { 
